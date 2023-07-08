@@ -40,10 +40,22 @@ function renderPage(){
         yearCardSpan.appendChild(yearNode);
         publisherCardSpan.appendChild(publisherNode);
 
+     
+
         gameCard.appendChild(titleCardSpan);
         gameCard.appendChild(yearCardSpan);
         gameCard.appendChild(publisherCardSpan);
+        
+        const imageUrls = ['./assets/rdr2.jpeg',
+                           './assets/ds.jpg',
+                           './assets/ac2.jpg',
+                           './assets/tlous.jpg',
+                           './assets/got.jpeg'];
 
+        const gameImage = document.createElement('img');
+        gameImage.src = imageUrls[i];
+        
+        titleCardSpan.appendChild(gameImage);
         mainContainer.appendChild(gameCard);
     }
 }
