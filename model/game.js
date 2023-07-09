@@ -1,6 +1,7 @@
 class Game{
 
-    constructor(name, year, publisher) {
+    constructor(image, name, year, publisher) {
+        this.image = image;
         this.name = name;
         this.year = year;
         this.publisher = publisher;
@@ -12,6 +13,7 @@ class Game{
         'Pubblicato da: ' + this.publisher;
     }
 }
+
 
 
 
